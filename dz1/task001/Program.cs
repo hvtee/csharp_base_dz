@@ -11,7 +11,7 @@ namespace task001
             System.Console.WriteLine("Input two numbers.");
             System.Console.Write("Number 1: ");
             int numberA = Convert.ToInt32(Console.ReadLine()!);
-            System.Console.Write("Number 1: ");
+            System.Console.Write("Number 2: ");
             int numberB = int.Parse((Console.ReadLine()!));
 
             System.Console.WriteLine(" ");
