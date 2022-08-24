@@ -16,13 +16,14 @@ namespace task001
             System.Console.Write("Number3: ");
             int number3 = Convert.ToInt32(Console.ReadLine()!);
 
-            int res = (number1 + number2 + number3) / 3;
-
-            if (res % 10 > (Math.Min(Math.Min(number1, number2), number3) % 10))
+            int res = ((number1 + number2 + number3) / 3) % 10;
+            int min = (Math.Min(Math.Min(number1, number2), number3) - Math.Min(Math.Min(number1, number2), number3) % 100) / 100;
+            
+            if (res > min)
             {
                 System.Console.WriteLine("Yes");
             }
-            else if (res % 10 < (Math.Min(Math.Min(number1, number2), number3) % 10))
+            else if (res < min)
             {
                 System.Console.WriteLine("No");
             }
