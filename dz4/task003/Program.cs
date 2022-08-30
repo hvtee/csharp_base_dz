@@ -8,14 +8,13 @@ namespace task003
         {
             Console.Clear();
 
-            int[] FillArray(int arrayLength)
+            void FillArray(int[] arr)
             {
-                int[] list = new int[arrayLength];
-                for (int i = 0; i < arrayLength; i++)
+                for (int i = 0; i < arr.Length; i++)
                 {
-                    list[i] = new Random().Next(-100, 101);
+                    arr[i] = new Random().Next(-100, 101);
                 }
-                return list;
+                
             }
             void PrintArray(int[] arr)
             {
@@ -31,8 +30,10 @@ namespace task003
 
             System.Console.Write("Input array length: ");
             int arrayLength = int.Parse(Console.ReadLine()!);
-            int[] array = FillArray(arrayLength);
+            int[] array = new int[arrayLength];
+
             System.Console.Write("The array is: ");
+            FillArray(array);
             PrintArray(array);
         }
     }
