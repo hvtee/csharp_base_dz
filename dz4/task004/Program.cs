@@ -7,12 +7,12 @@ namespace task004
         static void Main()
         {
             Console.Clear();
+
             void FillArray(int[] arr)
             {
                 for (int i = 0; i < arr.Length; i++)
                 {
-                    System.Console.Write("array[" + i + "] is: ");
-                    arr[i] = int.Parse(Console.ReadLine()!);
+                    arr[i] = new Random().Next(-10, 11);
                 }
 
             }
@@ -25,16 +25,27 @@ namespace task004
                 }
                 System.Console.Write("]");
             }
+            int FindMaxArray(int[] list)
+            {
+                int max = list[0];
+                for (int i = 0; i < list.Length - 1; i++)
+                {
+                    if (list[i] > max)
+                    {
+                        max = list[i];
+                    }
+                }
+                return max;
+            }
 
 
-
-            System.Console.Write("Input array length: ");
-            int arrayLength = int.Parse(Console.ReadLine()!);
-            int[] array = new int[arrayLength];
+            int[] array = new int[10];
 
             FillArray(array);
             System.Console.Write("The array is: ");
             PrintArray(array);
+            System.Console.WriteLine(" ");
+            System.Console.WriteLine("Max number is: " + FindMaxArray(array));
         }
     }
 }
