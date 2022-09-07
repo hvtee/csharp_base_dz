@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "task001_HowMany", "task001_HowMany\task001_HowMany.csproj", "{8E1B9D09-020D-4B5B-B996-4E2663319804}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "task001_HowMany", "task001_HowMany\task001_HowMany.csproj", "{8E1B9D09-020D-4B5B-B996-4E2663319804}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "task002_TwoFunc", "task002_TwoFunc\task002_TwoFunc.csproj", "{7C6B3391-DAE0-4206-BF20-CD52A72B8D4A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "task002_TwoFunc", "task002_TwoFunc\task002_TwoFunc.csproj", "{7C6B3391-DAE0-4206-BF20-CD52A72B8D4A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "task003_MoveArray", "task003_MoveArray\task003_MoveArray.csproj", "{F7C6091B-064D-4B88-886F-C63FCEED43BA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{7C6B3391-DAE0-4206-BF20-CD52A72B8D4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C6B3391-DAE0-4206-BF20-CD52A72B8D4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C6B3391-DAE0-4206-BF20-CD52A72B8D4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7C6091B-064D-4B88-886F-C63FCEED43BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7C6091B-064D-4B88-886F-C63FCEED43BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7C6091B-064D-4B88-886F-C63FCEED43BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7C6091B-064D-4B88-886F-C63FCEED43BA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
