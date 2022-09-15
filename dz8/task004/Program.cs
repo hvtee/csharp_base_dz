@@ -6,7 +6,7 @@ namespace task004
     {
         static void CreateArray(int[,,] arr)
         {
-            Random rnd = new Random(DateTime.Now.Year);
+            Random rnd = new Random(DateTime.Now.Day);
             for (int i = 0; i < arr.GetLength(0); i++)
             {
                 for (int j = 0; j < arr.GetLength(1); j++)
